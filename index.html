@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.S.Community</title>
+    <style>
+        :root {
+            --discord-bg: #36393f;
+            --discord-sidebar: #2f3136;
+            --discord-text: #dcddde;
+            --discord-link: #00b0f4;
+            --discord-hover: #40444b;
+            --discord-mention: #404675;
+            --discord-active: #7289da;
+            --discord-green: #3ba55c;
+        }
+
+        body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--discord-bg);
+            color: var(--discord-text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: var(--discord-sidebar);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .files-container {
+            background-color: var(--discord-sidebar);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .file-item {
+            margin: 8px 0;
+        }
+
+        .file-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: var(--discord-text);
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .file-link:hover {
+            background-color: var(--discord-hover);
+        }
+
+        .file-icon {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .file-name {
+            font-size: 16px;
+        }
+
+        .category-title {
+            color: var(--discord-text);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 20px 0 10px;
+            padding: 0 10px;
+        }
+
+        .tag {
+            background-color: var(--discord-mention);
+            color: var(--discord-active);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .online-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--discord-green);
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <span class="online-dot"></span>
+                M.S.Community
+                <span class="tag">Public</span>
+            </h1>
+        </div>
+
+        <div class="files-container">
+            <div class="category-title">📚 קבצים</div>
+            <ul class="file-list">
+                <li class="file-item">
+                    <a href="Home-Page-2024-12-28.html" class="file-link">
+                        <span class="file-icon">📄</span>
+                        <span class="file-name">Home Page - 28.12.2024</span>
+                    </a>
+                </li>
+                <li class="file-item">
+                    <a href="README.md" class="file-link">
+                        <span class="file-icon">📝</span>
+                        <span class="file-name">README.md</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
